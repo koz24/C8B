@@ -1,0 +1,15 @@
+.containerBubble
+  .bubble
+    .formBubble
+      form(action="/" method="POST")#formBubbleInput
+        input(type="text" autofocus name="name" placeholder="Name")
+        input(type="text" name="phone" placeholder="Phone")
+        textarea(name="message" placeholder="Message" form="formBubbleInput")
+        input(type="submit" value="send")
+        br 
+        svg(width="60" height="60")
+          path#svgSuccessCircle(d="M 30 5 a 25 25 0 0 1 0 50 a 25 25 0 0 1 0 -50")
+          //path#svgErrorCircle(d="M 30 5 a 25 25 0 0 1 0 50 a 25 25 0 0 1 0 -50")
+          path#svgTick(d="M 41 19 L 30 35 L 25 30")
+          //path#svgX(d="M 36 24 L 24 36")
+          //path#svgX2(d="M 36 36 L 24 24")
